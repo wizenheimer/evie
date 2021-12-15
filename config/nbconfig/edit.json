@@ -1,0 +1,8 @@
+{
+  "Editor": {
+    "file_extension_modes": {
+      ".lspy": "Common Lisp",
+      ".evie": "Common Lisp"
+    }
+  }
+}
