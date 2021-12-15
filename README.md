@@ -17,9 +17,7 @@ The project uses make utility to build the compiler from source.
 src = $(wildcard src/*.c)
 obj = $(src:.c=.o)
 
-LDFLAGS = -ledit -lm![146097926-76f2af17-37b2-42cf-995a-3d42a4caf74a](https://user-images.githubusercontent.com/91504165/146097956-891d0c13-f53b-4f8c-a78c-452051bae281.png)
-
-
+LDFLAGS = -ledit -lm!
 evie: $(obj)
 	$(CC) -o $@ $^ $(LDFLAGS)
 
@@ -31,7 +29,9 @@ clean:
 
 ### To Build Execute the following
 
-```make```
+```
+make
+```
 ## Highlights
 ![Element as BG (3)](https://user-images.githubusercontent.com/91504165/146094408-60d8879e-2947-472f-af05-fc0ab0624894.png)
 
