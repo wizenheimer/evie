@@ -92,6 +92,7 @@ clean:
 | 33 | ![Atoms](https://user-images.githubusercontent.com/91504165/146091553-6a9ed667-5c1a-40d8-be4b-e4822f26d90b.png) | Atoms - nil / true / false |
 
 ## Project Snapshots
+![Element as BG (4)](https://user-images.githubusercontent.com/91504165/146098573-057c1e30-e13d-4ebe-8465-c21b6362ec99.png)
 > Project Directory
 > ![Screenshot from 2021-12-15 05-18-08](https://user-images.githubusercontent.com/91504165/146097654-da223d6e-acb2-4b45-8f35-418a655fe91b.png)
 > REPL Snapshot
