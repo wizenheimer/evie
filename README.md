@@ -59,6 +59,8 @@ make
 |` `  | ` > 7 4`   |`1`|
 |Logical operators  | ` def {x y z} 1 2 3`   |`()`|
 |` ` | `if (or (== x y) (>= z y)) {+ x y} {- x y}`   |`3`|
+|Map Operation  | ` map (\ {x} {+ x 10}) {5 2 11}`   |`{15 12 21}`|
+|Filter Operation  | `filter (\ {x} {> x 2}) {5 2 11 -7 8 1}`   |`{5 11 8}`|
 
 ## Standard Library Overview
 ![Element as BG (2)](https://user-images.githubusercontent.com/91504165/146094420-883a2a8d-5f55-4fb2-827b-82efc9ec8cf5.png)
