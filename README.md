@@ -42,6 +42,24 @@ make
 5. Our current language Evie , borrows it’s design principles the LISP language - which is a family of programming languages with a distinctive, fully parenthesized prefix notation . 
 6. Due to its simpler syntax, it’s easy to parse compared to a language with a static type system.
 
+| Type| Example | Output  |
+|--|--|--|
+|Arithmetic Operation  | `+ (* 2 (- 1 3) (/ 4 2))` |`8`  |
+|List Functions  | `eval (head (tail (join {1 2} (list 3 4 5))))` |`2`  |
+|Variable Functions  | `def {x z} 123 -321`   |`()`|
+|` `  | `x`  |`123`|
+| ` `  | `z`  |`-321`|
+|Variable Functions  | `= {x} 11`   |`()`|
+| ` ` | `x`  |`11`|
+|Lambda functions  | ` \ {x y} {+ x y}`   |`(\ {x y} {+ x y})`|
+|Functions definition  | `fun {addit f xs} {eval (join (list f) xs)}`   |`()`|
+|` ` | `addit + {5 6 7}`   |`18`|
+|Comparison operations  | ` > 3 1`   |`1`|
+|` `  | ` < 2 1`   |`0`|
+|` `  | ` > 7 4`   |`1`|
+|Logical operators  | ` def {x y z} 1 2 3`   |`()`|
+|` ` | `if (or (== x y) (>= z y)) {+ x y} {- x y}`   |`3`|
+
 ## Standard Library Overview
 ![Element as BG (2)](https://user-images.githubusercontent.com/91504165/146094420-883a2a8d-5f55-4fb2-827b-82efc9ec8cf5.png)
 
